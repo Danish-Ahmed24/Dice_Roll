@@ -29,14 +29,13 @@ class _DiceRollerState extends State<DiceRoller> {
           'assets/images/dice-$currentDiceRoll.png',
           width: 250,
         ),
-        SizedBox(height: 60),
         TextButton(
           onPressed: rollDice,
           style: TextButton.styleFrom(
-            foregroundColor: Colors.white,
+            padding: EdgeInsets.only(top: 100),
             textStyle: TextStyle(fontSize: 40),
           ),
-          child: Text("Roll"),
+          child: Text("ROLL"),
         ),
       ],
     );

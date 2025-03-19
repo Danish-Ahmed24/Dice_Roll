@@ -35,6 +35,7 @@ class _DiceRollerState extends State<DiceRoller> {
         //     padding: EdgeInsets.only(top: 150),
         //     textStyle: TextStyle(fontSize: 40),
         //   ),
+        SizedBox(height: 275),
         ElevatedButton(
           onPressed: rollDice,
           style: ElevatedButton.styleFrom(

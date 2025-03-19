@@ -29,13 +29,30 @@ class _DiceRollerState extends State<DiceRoller> {
           'assets/images/dice-$currentDiceRoll.png',
           width: 250,
         ),
-        TextButton(
+        // TextButton(
+        //   onPressed: rollDice,
+        //   style: TextButton.styleFrom(
+        //     padding: EdgeInsets.only(top: 150),
+        //     textStyle: TextStyle(fontSize: 40),
+        //   ),
+        ElevatedButton(
           onPressed: rollDice,
-          style: TextButton.styleFrom(
-            padding: EdgeInsets.only(top: 100),
-            textStyle: TextStyle(fontSize: 40),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(
+              255,
+              242,
+              255,
+              0,
+            ),
           ),
-          child: Text("ROLL"),
+          child: Text(
+            "Roll",
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),
+          ),
         ),
       ],
     );
